@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercisios</title>
+    <script src="Ejercisios3.js"></script>
+    <style>
+        .box {
+            width: 250px;
+            float: left;
+            margin: 20px;
+        }
+    
+        .box form {
+            display: flex;
+            flex-direction: column; /* Cambiar a fila */
+        }
+    
+        .box label {
+            width: 100px; /* Ancho fijo para las etiquetas */
+            margin-right: 10px; /* Margen derecho para separar etiquetas de los campos de entrada */
+        }
+    
+        .box input[type="text"],
+        .box input[type="number"] {
+            flex: 1; /* Permitir que los campos de entrada ocupen el espacio restante */
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    
+        .box input[type="submit"] {
+            width: 100%; /* Ajustar el ancho del botón al 100% */
+            padding: 5px;
+        }
+
+        .dashed{
+            border: 3px dashed slategray;
+        }
+
+        .box.dashed {
+            text-align: center;
+        }
+    </style>
+    
+    
+    
+</head>
+
+
+
+<body>
+    <h1>Ejercisio 1</h1>
+
+   
+        <div class="box">
+            <form action="#" method="post" id="Formulario" onsubmit="return false">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre">
+                <span id="errorname" style="color: red;"></span>
+                <br>
+    
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" name="Apellidos" id="Apellidos">
+                <span id="errorapellido" style="color: red;"></span>
+                <br>
+    
+                <label for="Edad">Edad:</label>
+                <input type="text" name="Edad" id="Edad">
+                <span id="erroredad" style="color: red;"></span>
+                <br>
+    
+                <input type="submit" value="Enviar" id="submit">
+            </form>
+        </div>
+
+        <div class="box dashed">
+
+        </div>
+
+
+</body>
+</html>
