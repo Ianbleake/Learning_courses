@@ -1,8 +1,81 @@
-import ProductCategoryRow from "./components/ProductCategoryRow.Jsx";
-import ProductRow from "./components/ProductRow.Jsx";
-import ProductTable from "./components/ProductTable.Jsx";
-import SearchBar from "./components/SearchBar";
-import FilterableProductTable from "./components/FilterableProductTable";
+function ProductCategoryRow({ category }) {
+  return (
+    <tr>
+      <th colSpan="2">
+        {category}
+      </th>
+    </tr>
+  );
+}
+
+function ProductRow({ product }) {
+  const name = product.stocked ? product.name :
+    <span style={{ color: 'red' }}>
+      {product.name} $
+    </span>;
+
+  return (
+    <tr>
+      <td>{name}</td>
+      <td>{product.price}</td>
+    </tr>
+  );
+}
+
+function ProductTable({ products }) {
+  const rows = [];
+  let lastCategory = null;
+
+  products.forEach((product) => {
+    if (product.category !== lastCategory) {
+      rows.push(
+        <ProductCategoryRow
+          category={product.category}
+          key={product.category} />
+      );
+    }
+    rows.push(
+      <ProductRow
+        product={product}
+        key={product.name} />
+    );
+    lastCategory = product.category;
+  });
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+  );
+}
+
+function SearchBar() {
+  return (
+    <form className="border border-solid border-blue-300 h-[100px] w-[198px]">
+      <input type="text" placeholder="Buscar..." />
+      <label>
+        <input type="checkbox" />
+        {' '}
+        Mostrar solo productos en stock
+      </label>
+    </form>
+  );
+}
+
+function FilterableProductTable({ products }) {
+  return (
+    <div className="border border-solid border-blue-950 h-[350px] w-[200px] m-12">
+      <SearchBar />
+      <ProductTable products={products} />
+    </div>
+  );
+}
 
 const PRODUCTS = [
   {category: "Frutas", price: "$1", stocked: true, name: "Manzana"},
