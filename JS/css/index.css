@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: url(../media/wppjs.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 2 / 2 / 5 / 5;
+    border: 5px solid rgba(166, 160, 158, 0.45);
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    background: none;
+    text-align: center;
+}
+
+.div1 h1
+{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+    color: blanchedalmond;
+    
+}
+
+.div1 p,li,h2,span
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: beige;
+}
+
+#push
+{
+    border-radius: 20px;
+    height: 55px;
+    width: 150px;
+    border: 2px solid gainsboro;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+
+}
+
+#push:hover
+{
+    transition: 250ms;
+    background-color: rgba(232, 195, 158, 0.447);
+}
+
+#push:active
+{
+    background-color: transparent;
+    color: beige;
+}
+
+.btn
+{
+    border-radius: 20px;
+    height: 55px;
+    width: 150px;
+    border: 2px solid gainsboro;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    margin: 20px;
+}
+
+.btn:hover
+{
+    transition: 250ms;
+    background-color: rgba(232, 195, 158, 0.447);
+}
+
+.btn:active
+{
+    background-color: transparent;
+    color: beige;
+}

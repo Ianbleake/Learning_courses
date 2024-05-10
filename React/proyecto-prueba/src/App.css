@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: auto;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url("../media/fonts/websymbols-regular-webfont.eot");
+  src: url("../media/fonts/websymbols-regular-webfont.eot#iefix") format("embedded-opentype"),
+  url("../media/fonts/websymbols-regular-webfont.woff") format("woff"),
+  url("../media/fonts/websymbols-regular-webfont.ttf") format("truetype"),
+  url("../media/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App-header {
+  clear: both;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Titulo {
+  display: block;
+  height: auto;
+  width: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 5px solid rgba(166, 160, 158, 0.45);
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background: none;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.Topic {
+  display: block;
+  border-top: 5px solid rgba(166, 160, 158, 0.45);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Topic h2 {
+  display: block;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 5px solid rgba(166, 160, 158, 0.45);
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background: none;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.Topic footer
+{
+  font-family: WebSymbolsRegular;
+  color: white;
+}
+
+.Topic footer a
+{
+  display: flexbox;
+  flex-direction: row;
+  font-size: 45px;
+  color: white;
+  margin: 150px;
+  text-decoration: none;
+
+}
+
+.derecha {
+  display: block;
+  float: right;
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.izquierda {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px;
+  padding-top: 5%;
+  display: block;
+  float: left;
+  height: 100%;
+  width: 30%;
+  min-height: 100vh;
+}
+
+.menu
+{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li
+{
+  box-sizing: border-box;
+  display: block;
+  
+  margin-top: 20px;
+  height: 60px;
+  width: 400px;
+
+  border: 5px solid rgba(166, 160, 158, 0.45);
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background: none;
+  text-align: center;
+  line-height: 50px;
+
+}
+
+.menu a
+{
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  width: 400px;
+  border: 5px transparent rgba(166, 160, 158, 0.45);
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu li:hover
+{
+  transition: 800ms;
+  transform: translateX(-100);
+  background-color: #61DAFB;
+}
+
+.content
+{
+  min-height: 60vh;
+  min-width: 100vh;
+}

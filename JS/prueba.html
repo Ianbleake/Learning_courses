@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    .red {
+        background: red
+    }
+</style>
+<script src="eventos.js"></script>
+<script src="firma.js"></script>
+<body>
+
+    <h1>Escucha de eventos(Evento click)</h1>
+    <button>Saludar</button>
+
+    <h1>Evento Focus</h1>
+    <form action="">
+        <input type="text" name="focus" id="focus">
+    </form>
+
+    <h1>Evento onblur</h1>
+    <form name=f1>
+        <label for="numero">Escriba un número entero:</label><br>
+        <input type="text" name="numero" size="8" value="" onblur="compruebaValidoEntero()">
+    </form>
+
+    <h1>Eventos Keydown-keypress-keyup</h1>
+    <form action="">
+        <input type="text" name="down" id="down">
+    </form>
+
+    <button id="Stop">Stop</button>
+    
+    <button id="Start">Start</button>
+
+</body>
+
+
+</html>
