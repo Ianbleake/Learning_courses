@@ -89,3 +89,7 @@ body {
     background-color: transparent;
     color: beige;
 }
+
+.link{
+    text-decoration: none;
+}
