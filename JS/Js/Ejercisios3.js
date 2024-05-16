@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
 */
 
 //*Validar Formulario con JS
-/*
+
 const styles = `background: linear-gradient(20deg, rgba(2,0,36,1) 2%, rgba(201,182,27,1) 50%, rgba(255,226,28,1) 93%);color:#fff;padding: 5px 10px;`;
 
 window.addEventListener('load',() => {
@@ -131,7 +131,7 @@ window.addEventListener('load',() => {
 
     });
 });
-*/
+
 
 function remove (string) {
     var last = string.trim().substr(-1,1);
