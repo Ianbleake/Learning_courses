@@ -10,7 +10,7 @@ const attack = ()=>{console.log("use fireball");};
 
 //Crar un objeto
 const player = {
-  name: 'Ian',
+  name: 'Snake',
   life: '99',
   power: '10',
   talk: ()=>{ return "Hola"; },
@@ -25,10 +25,23 @@ console.log(player.power);
 //Añadir una propiedad a un objeto 
 player.weapon = "sword";
 console.log(player.weapon);
-console.log(player);
 
 //Metodos de un objeto
 console.log(player.talk());
 player.fireball();
 
 //JSON
+fetch("../Js/informacion.Json").then(response => {return response.json();}).then(user => {
+    console.log(user.name);
+    console.log(user.life);
+});
+
+
+//Pasar de Objeto a JSON
+const usuario = {
+  nombre: 'IanBleake',
+  vida: '99',
+  habla: ()=>{console.log("hello")}
+}
+
+console.log(JSON.stringify(usuario));
