@@ -89,3 +89,21 @@ body {
     background-color: transparent;
     color: beige;
 }
+
+a{
+    text-decoration: none;
+}
+
+.div2{
+    color: white;
+    font-size: 10px;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    border: 5px solid rgba(166, 160, 158, 0.45);
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    background: none;
+    text-align: center;
+}

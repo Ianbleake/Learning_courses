@@ -1,58 +1,3 @@
-'use strict'
-
-//eventos del boton
-
-function CambiarColor() 
-{
-    console.log("click");
-    document.body.style.background = "black";
-}
-
-function Hola()
-{
-    alert("HolaMundo");
-}
-
-function action() {
-    alert("Hello!");
-}
-
-function Fondo()
-{
-    var back = document.querySelector("#btn3");
-    
-    var bg = back.style.background
-    if(bg == "red")
-    {
-        back.style.background = "green"
-        console.log("push")
-    }
-    
-    else
-    {
-        back.style.background = "red"
-        console.log("pushpush")
-    }
-
-    return true;
-}
-
-var boton = document.querySelector("#push");
-boton.addEventListener('click',function(){CambiarColor();});
-
-const button = document.querySelector("#PushJS");
-button.onclick = function() {
-  alert("Hello from JS!");
-}
-
-const button1 = document.querySelector("#btn");
-button1.addEventListener("click",action);
-
-const button2 = document.querySelector("#btn2");
-button2.addEventListener("click",Hola);
-button2.addEventListener("click",CambiarColor);
-
-
 const styles = `background:linear-gradient(#884ced, #ec1cce);color:#fff;padding: 5px 10px;`;
 
 console.log("%c¡Curso JavaScript!", styles);
@@ -113,42 +58,6 @@ window.addEventListener('load', () => {
     var inputUp = document.querySelector("#down");
     inputPress.addEventListener('keyup', function (event) { 
         console.log("Soltaste la Tecla:", String.fromCharCode(event.keyCode)) });
-
-        
-
-    //Timers
-        function intervalo(){
-            var tiempo = setInterval(function(){
-
-                console.log("Set interval ejecutado");
-    
-                var encabezado = document.querySelector("h1");
-    
-                if(encabezado.style.fontSize == "50px"){
-                    encabezado.style.fontSize = "20px";
-                }
-                else{
-                    encabezado.style.fontSize = "50px"
-                }
-            },1000);
-
-            return tiempo;
-        }
-
-       
-        var tiempo = intervalo();
-        var stop = document.querySelector("#Stop");
-        var start = document.querySelector("#Start");
-
-        stop.addEventListener("click", function(){
-            clearInterval(tiempo);
-            alert("Haz parado el intervalo");
-        });
-
-        start.addEventListener("click",function(){
-            alert("Se ha reaunudado el intervalo");
-            tiempo = intervalo();
-        });
 
 });
 
