@@ -107,3 +107,21 @@ a{
     background: none;
     text-align: center;
 }
+
+.link{
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    background-color: gainsboro;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 1px 1px 1px  #000000;
+    box-shadow: 2px 2px 2px 2px white inset;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
