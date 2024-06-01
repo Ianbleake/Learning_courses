@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bgcolor-primary: #C738BD;
+  --bgcolor-secondary: #ffc873;
+  --bgcolor-tertiary: #d37ec6;
+  --bgcolor-primary-aux: #a05d5d;
+  --borderbtn: #2d7cbf;
+  --gray: #888888;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  background: rgb(255,56,103);
+  background: linear-gradient(228deg, rgba(255,56,103,1) 0%, rgba(255,200,115,1) 50%, rgba(211,126,198,1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.card{
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 450px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0 25px var(--gray) inset;
+}
+
+.cardheader{
+  height: 150px;
+  width: 100%;
+  background-image: url(computer-rgb-keyboard-on-black-background-3d-rendering-of-streaming-gear-and-gamer-workspace-concept-photo.jpg);
+  background-position: right;
+  border-bottom:  solid 5px var(--bgcolor-primary);
+ 
+}
+
+.banner{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ink{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(219deg, rgba(194,60,239,0.5) 0%, rgba(196,63,240,0.5) 69%);
+}
+
+.userimg{
+  position: absolute;
+  top: 13%;
+  left: 43%;
+  height: 128px;
+  width: 128px;
+  background: rgb(194,60,239);
+  background: linear-gradient(219deg, rgba(194,60,239,1) 0%, rgba(196,63,240,0.9) 69%);
+  border-radius: 100%;
+  border: solid 5px var(--bgcolor-primary);
+  overflow: hidden;
+}
+
+.avatar{
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 9%;
+}
+
+.cardbody{
+  height: 370px;
+}
+
+.titlecontainer{
+  margin-top: 45px;
+  text-align: center;
+}
+
+.maintitle{
+  font-size: 25px;
+  margin: 0%;
+}
+
+.dir{
+  color: var(--bgcolor-primary-aux) ;
+  font-style: italic;
+}
+
+.icondir{
+  height: 15px;
+}
+
+.description{
+ padding: 10px 50px;
+ padding-bottom: 0px;
+ text-align: left;
+ line-height: 22px;
+}
+
+.btn{
+  margin-left: 150px;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid #2d7cbf;
+  height: 45px;
+  width: 150px;
+  color: #2d7cbf;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cardfooter{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  border-top: 1px solid gainsboro;
+}
+
+.colfooter{
+  width: 33.33%;
+  text-align: center;
+  padding-top: 12px;
+  color: #888888;
+}
+
+.colfooter:first-child,.colfooter:nth-child(2){
+  border-right: 1px solid gainsboro;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.icon{
+  height: 30px;
+  margin-right: 10px;
+}
+

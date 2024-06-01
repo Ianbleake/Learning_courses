@@ -88,3 +88,33 @@ expediente.historial[0] = "Dolor de estomago";
 console.log("Nuevo: ", expediente.historial[0] );
 console.log("Viejo: ", cita.historial[0] );
 
+//Iteradores de Objetos
+const user = {
+  name: "Angel",
+  life: 99,
+  power: 10,
+  talk: function() {
+    return "Hola!";
+  }
+};
+
+console.log(Object.keys(user));
+console.log(Object.values(user));    
+console.log(Object.entries(user));  
+
+//Agrupar elementos por criterio 
+const users = [
+  { name: "ManzDev", type: "streamer", color: "indigo" },
+  { name: "afor_digital", type: "streamer", color: "blue" },
+  { name: "BlurSoul_", type: "moderator", color: "indigo" },
+  { name: "felixicaza", type: "moderator", color: "blue" },
+  { name: "pheralb", type: "moderator", color: "green" },
+  { name: "omaaraguirre", type: "viewer", color: "orange" },
+  { name: "LuisLlamas_es", type: "viewer", color: "orange" },
+  { name: "ZeroBl", type: "viewer", color: "black" }
+];
+
+const usersByType = Object.groupBy(users, user => user.type);
+
+console.log(usersByType);
+
