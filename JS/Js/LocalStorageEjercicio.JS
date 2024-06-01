@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
 
     if (titulo.length > 0) {
       localStorage.setItem(titulo, titulo);
-      location.reload();  // Recargar la página para mostrar el nuevo elemento
+      location.reload();
     }
   });
 
@@ -22,6 +22,7 @@ window.addEventListener('load', () => {
       var li = document.createElement("li");
       var del = document.createElement("button");
       li.setAttribute("id", key);
+      li.setAttribute("class","list")
       del.setAttribute("class", "delete");
       del.append("Borrar");
       li.append(value);
