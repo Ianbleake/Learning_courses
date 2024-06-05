@@ -23,7 +23,6 @@ function generateElement(data) {
 }
 
 async function getData(url) {
-  console.log(url);
   const response = await fetch(url);
   const data = await response.json();
   return data;
