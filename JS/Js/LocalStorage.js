@@ -10,6 +10,8 @@ window.addEventListener('load',()=>{
   //*Guardar Datos 
   localStorage.setItem("Saludo","Hola mundo");
 
+  sessionStorage.setItem("Nombre","Ivan")
+
   //*Recuperar Elemento
   var valor = localStorage.getItem("Saludo");
   console.log(valor);
