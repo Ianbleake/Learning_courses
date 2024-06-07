@@ -28,9 +28,5 @@ async function getData(url) {
   return data;
 }
 
-async function main() {
-  const usuarios = await getData('https://jsonplaceholder.typicode.com/users');
-  generateElement(usuarios);
-}
-
-main();
+getData('https://jsonplaceholder.typicode.com/users')
+  .then(data => generateElement(data));
