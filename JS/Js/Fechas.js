@@ -21,6 +21,3 @@ function timenow(){
 }
 
 setInterval(timenow,1000);
-
-//!Matematicas
-
