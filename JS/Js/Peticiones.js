@@ -30,3 +30,12 @@ async function getData(url) {
 
 getData('https://jsonplaceholder.typicode.com/users')
   .then(data => generateElement(data));
+
+//*Try catch
+try{
+  var year = 2020;
+  alert(yea);
+}
+catch(error){
+  console.error("Ha sucedido un error: "+error)
+}
