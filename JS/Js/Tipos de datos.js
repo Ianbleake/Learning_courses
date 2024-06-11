@@ -30,3 +30,12 @@ console.log(typeof entero);
 console.log(typeof flotante);
 console.log(typeof boole);
 console.log(typeof string);
+
+//*Interpolacion de variables
+const firstword = "frese"
+const secondword = "concatenada"
+const text = "Esta es una" + firstword+" "+secondword
+
+console.log(text);
+
+const interpoltext = `Esta es una ${firstword} ${secondword}`;

@@ -14,48 +14,30 @@
         <br>
         <h2> Clase: Eventos</h2>
         </br>
-        <span>Ejemplo</span></br>
-        <button class="btn" id="push">Push me!</button>
-        </br>
-        <span>Evento con atributo html (onclick)</span></br>
-        <button class="btn" onclick="Hola()">Saludar</button>
-        <button class="btn" id="btn3" onclick="Fondo()">Fondo</button>
-        </br>
-        <span>Evento con Propiedad JS</span></br>
-        <button class="btn" id="PushJS">Hey JS!</button>
-        <br>
-        <span>Evento con eventListenner</span></br>
-        <button class="btn" id="btn">Hey world!</button>
-        <br>
-        <span>Evento con multiples Listenner</span></br>
-        <button class="btn" id="btn2">change world!</button>
-        </p>
+        <h2>Escucha de eventos(Evento click)</h2>
+    <button>Saludar</button>
 
+    <h2>Evento Focus</h2>
+    <form action="">
+        <input type="text" name="focus" id="focus">
+    </form>
 
-        <h1>Escucha de eventos(Evento click)</h1>
-        <button>Saludar</button>
+    <h2>Evento onblur</h2>
+    <form id=f1>
+        <label for="numero">Escriba un número entero:</label><br>
+        <input type="text" name="numero" size="8" value="">
+    </form>
 
-        <h1>Evento Focus</h1>
-        <form action="">
-            <input type="text" name="focus" id="focus">
-        </form>
+    <h2>Eventos Keydown-keypress-keyup</h2>
+    <form action="">
+        <input type="text" name="down" id="down">
+    </form>
 
-        <h1>Evento onblur</h1>
-        <form name=f1>
-            <label for="numero">Escriba un número entero:</label><br>
-            <input type="text" name="numero" size="8" value="" onblur="compruebaValidoEntero()">
-        </form>
+    <h3 class="alertMessage">Revisar consola</h3>
 
-        <h1>Eventos Keydown-keypress-keyup</h1>
-        <form action="">
-            <input type="text" name="down" id="down">
-        </form>
-
-        <button id="Stop">Stop</button>
-        
-        <button id="Start">Start</button>
     </div>
 
+    
 </body>
 <script type="text/javascript" src="../Js/eventos.js"></script>
 

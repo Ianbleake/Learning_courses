@@ -68,7 +68,7 @@ console.log(numbers);
     }
     console.log("Tiradas correctas: ", result.value);
   });
-*/
+
   //!Promesas
 
   //*Consumir una promesa
@@ -113,7 +113,14 @@ console.log(numbers);
   doTask(10)
   .then(result => console.log("Tiradas correctas: ", result.value))
   .catch(err => console.error("Ha ocurrido algo: ", err.message));
-
+*/
   //!Async await
-
   
+  async function request (url){
+    return await fetch(url)
+      .then(Response => Response.json())
+  }
+
+  request('https://jsonplaceholder.typicode.com/users/1')
+    .then(data => console.log(data.name))
+

@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color: khaki;
+  background-color:cornflowerblue;
   min-height: 100%;
   min-width: 100%;
 }
@@ -33,7 +33,7 @@ footer{
 
 .banner{
   height: 100%;
-  width: 70%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -43,7 +43,7 @@ footer{
   width: 80%;
   height: 100%;
   font-family: monospace;
-  line-height: 130px;
+  line-height: 100px;
   font-size: 50px;
   text-align: center;
 }
@@ -60,8 +60,8 @@ footer{
   width: 25%;
   border: 2px solid black;
   box-shadow: 6px 6px 6px 1px black;
-  background-color: gold;
-  color: black;
+  background-color: dodgerblue;
+  color: white;
   font-family: monospace;
   text-decoration: none;
   text-align: center;

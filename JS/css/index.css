@@ -150,6 +150,7 @@ button{
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px;
     background-color: gainsboro;
+    margin: auto;
 }
 
 ul#usuarios {

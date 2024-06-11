@@ -28,9 +28,14 @@ async function getData(url) {
   return data;
 }
 
-async function main() {
-  const usuarios = await getData('https://jsonplaceholder.typicode.com/users');
-  generateElement(usuarios);
-}
+getData('https://jsonplaceholder.typicode.com/users')
+  .then(data => generateElement(data));
 
-main();
+//*Try catch
+try{
+  var year = 2020;
+  alert(yea);
+}
+catch(error){
+  console.error("Ha sucedido un error: "+error)
+}

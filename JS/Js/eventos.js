@@ -1,6 +1,6 @@
 const styles = `background:linear-gradient(#884ced, #ec1cce);color:#fff;padding: 5px 10px;`;
 
-console.log("%c¡Curso JavaScript!", styles);
+console.log("%c¡Curso JavaScript!", styles); 
 
 
 //Evento load
@@ -34,8 +34,8 @@ window.addEventListener('load', () => {
         }
     }
 
-    function compruebaValidoEntero() { //esta es la funcion que llama el evento Onblur
-        enteroValidado = validarEntero(document.f1.numero.value) //manda el valor ingresado en el input a la funcion de validacion y asigna el resultado a la variable
+    function compruebaValidoEntero(data) { //esta es la funcion que llama el evento Onblur
+        let enteroValidado = validarEntero(data) //manda el valor ingresado en el input a la funcion de validacion y asigna el resultado a la variable
         if (enteroValidado == "NotNumber") { // si el valor no era un numero le avisa al usuario
             alert("Debe escribir un numero entero!")
             document.f1.numero.select() //selecciona el texto
@@ -43,6 +43,11 @@ window.addEventListener('load', () => {
         } else
             document.f1.numero.value = enteroValidado
     }
+
+    const form = document.querySelector('#f1');
+    form.addEventListener('onBlur',()=>{
+        compruebaValidoEntero(form.numero.value);
+    })
 
     //Evento keydown
     var inputDown = document.querySelector("#down");
@@ -56,7 +61,7 @@ window.addEventListener('load', () => {
 
     //Evento KeyUp
     var inputUp = document.querySelector("#down");
-    inputPress.addEventListener('keyup', function (event) { 
+    inputUp.addEventListener('keyup', function (event) { 
         console.log("Soltaste la Tecla:", String.fromCharCode(event.keyCode)) });
 
 });
